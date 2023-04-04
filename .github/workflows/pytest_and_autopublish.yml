@@ -37,7 +37,7 @@ jobs:
     # * Repo is self (prevents running from forks)
     # * Branch is `main`
     if: |
-      github.repository == 'google-research/remedis'
+      github.repository == 'google-research/medical-ai-research-foundations'
       && github.ref == 'refs/heads/main'
     needs: pytest-job  # Only publish after tests are successful
     runs-on: ubuntu-latest
