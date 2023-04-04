@@ -21,7 +21,7 @@ Residual networks (ResNets) were proposed in:
 from typing import Callable, Dict, Optional, Tuple
 
 from absl import flags
-from medical_research_foundations import bit
+from . import bit
 import tensorflow.compat.v1 as tf
 import typing_extensions
 

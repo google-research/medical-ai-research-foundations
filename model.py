@@ -15,9 +15,9 @@
 """Model specification for SimCLR."""
 
 from absl import flags
-from medical_research_foundations import data_util
-from medical_research_foundations import model_util
-from medical_research_foundations import objective as obj_lib
+from . import data_util
+from . import model_util
+from . import objective as obj_lib
 from medical_research_foundations.lars_optimizer import LARSOptimizer
 import tensorflow.compat.v1 as tf
 import tensorflow.compat.v2 as tf2

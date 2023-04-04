@@ -19,11 +19,11 @@ import os
 
 from absl import app
 from absl import flags
-from medical_research_foundations import data as data_lib
-from medical_research_foundations import data_util
-from medical_research_foundations import model as model_lib
-from medical_research_foundations import model_util
-from medical_research_foundations import resnet
+from . import data as data_lib
+from . import data_util
+from . import model as model_lib
+from . import model_util
+from . import resnet
 import tensorflow.compat.v1 as tf
 import tensorflow_datasets as tfds
 from tensorflow_estimator.compat.v1 import estimator as tf_estimator  # pylint: disable=g-deprecated-tf-checker

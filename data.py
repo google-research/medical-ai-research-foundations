@@ -18,7 +18,7 @@ import functools
 from typing import Dict, Any, Optional, Callable
 
 from absl import flags
-from medical_research_foundations import data_util
+from . import data_util
 import tensorflow.compat.v1 as tf
 
 FLAGS = flags.FLAGS

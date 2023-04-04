@@ -15,7 +15,7 @@
 """Network architectures related functions used in SimCLR."""
 
 from absl import flags
-from medical_research_foundations import resnet
+from . import resnet
 import tensorflow.compat.v1 as tf
 
 FLAGS = flags.FLAGS
