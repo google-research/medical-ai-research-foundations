@@ -18,7 +18,7 @@ from absl import flags
 from . import data_util
 from . import model_util
 from . import objective as obj_lib
-from medical_research_foundations.lars_optimizer import LARSOptimizer
+from .lars_optimizer import LARSOptimizer
 import tensorflow.compat.v1 as tf
 import tensorflow.compat.v2 as tf2
 from tensorflow_estimator.compat.v1 import estimator as tf_estimator  # pylint: disable=g-deprecated-tf-checker
