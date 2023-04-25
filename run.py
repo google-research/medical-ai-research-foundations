@@ -93,7 +93,7 @@ _EVAL_SPLIT = flags.DEFINE_string(
 )
 
 _DATASET = flags.DEFINE_string(
-    'dataset', 'chexpert', 'Name of a dataset to load from a TFDS builder.'
+    'dataset', 'cifar10', 'Name of a dataset to load from a TFDS builder.'
 )
 
 _CACHE_DATASET = flags.DEFINE_bool(
