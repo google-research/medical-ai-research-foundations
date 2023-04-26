@@ -56,6 +56,21 @@ Models are provided as TensorFlow 2 saved models, and are compatible with versio
 
 
 ### **Files**
+You can access model weights at the [Medical AI Research Foundations PhysioNet](https://physionet.org/content/medical-ai-research-foundation/1.0.0/) after acknowledging the usage license.
+
+
+| Model                                                          | Modality         | Backbone | Architecture    |
+|----------------------------------------------------------------|------------------|----------|-----------------|
+| [cxr-152x2-remedis-m](https://doi.org/10.13026/grp0-z205)      | Chest X-Ray      | BiT-M    | ResNet 152x2    |
+| [cxr-152x2-remedis-s](https://doi.org/10.13026/grp0-z205)      | Chest X-Ray      | BiT-S    | ResNet 152x2    |
+| [cxr-50x1-remedis-m](https://doi.org/10.13026/grp0-z205)       | Chest X-Ray      | BiT-M    | ResNet 50x1     |
+| [cxr-50x1-remedis-s](https://doi.org/10.13026/grp0-z205)       | Chest X-Ray      | BiT-S    | ResNet 50x1     |
+| [path-152x2-remedis-m](https://doi.org/10.13026/grp0-z205)     | Pathology        | BiT-M    | ResNet 152x2    |
+| [path-152x2-remedis-s](https://doi.org/10.13026/grp0-z205)     | Pathology        | BiT-S    | ResNet 152x2    |
+| [path-50x1-remedis-m](https://doi.org/10.13026/grp0-z205)      | Pathology        | BiT-M    | ResNet 50x1     |
+| [path-50x1-remedis-s](https://doi.org/10.13026/grp0-z205)      | Pathology        | BiT-S    | ResNet 50x1     |
+
+
 There are multiple models provided. Each model file has the following format:
 
 `{DATA_TYPE}-{ARCHITECTURE}-remedis-{PRETRAINING_DATA_SIZE}`
@@ -63,6 +78,13 @@ There are multiple models provided. Each model file has the following format:
   - `DATA_TYPE`:  `cxr` (for Chest X-Ray) or `path` (for Pathology).
   - `ARCHITECTURE`: 50x1 (for ResNet 50x1) or 152x2 (for ResNet 152x2), indicating the architectures.
   - `RETRAINING_DATA_SIZE`: `s` or `m`, indicating whether BiT-S or BiT-M were used as a starting point.
+
+Download the models using the terminal using the following command or by visiting [Medical AI Research Foundations PhysioNet](https://physionet.org/content/medical-ai-research-foundation/1.0.0/) directly:
+
+```
+wget -r -N -c -np --user <physionet-username> --ask-password https://physionet.org/files/medical-ai-research-foundation/1.0.0/
+```
+
 
 ###  **Example Usage**
 The Tensorflow 2 saved model format can be loaded as follows. See further information about hub Module [here](https://www.tensorflow.org/hub/api_docs/python/hub/Module).
@@ -119,6 +141,13 @@ We kindly request that user cite the corresponding papers if you use our checkpp
   author={Azizi, Shekoofeh and Culp, Laura and Freyberg, Jan and Mustafa, Basil and Baur, Sebastien and Kornblith, Simon and Chen, Ting and MacWilliams, Patricia and Mahdavi, S Sara and Wulczyn, Ellery and others},
   journal={arXiv preprint arXiv:2205.09723},
   year={2022}
+}
+
+@misc{azizi2023medical,
+  author = {Azizi, S. and Freyberg, J. and Culp, L. and MacWilliams, P. and Mahdavi, S. and Natarajan, V. and Karthikesalingam, A.},
+  title = {Medical AI Research Foundations: A repository of medical foundation models (version 1.0.0). PhysioNet.},
+  url = {https://doi.org/10.13026/grp0-z205},
+  year = {2023},
 }
 ```
 
