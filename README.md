@@ -1,7 +1,7 @@
 
 ## Medical AI Research Foundations
 
-[Medical AI Research Foundations](https://doi.org/10.13026/psq3-vj24) is a repository of open-source medical foundation models and code. With this collection of non-diagnostic models, APIs, and resources like code and data, researchers and developers can accelerate their medical AI research. This is a clear unmet need as currently there is no central resource today that developers and researchers can leverage to build medical AI and as such, this has slowed down both research and translation efforts. Our goal is to democratize access to foundational medical AI models, and help researchers and medical AI developers rapidly build new solutions. To this end, we open-sourced [REMEDIS](https://arxiv.org/pdf/2205.09723.pdf) code-base and we are currently hosting checkpoints for chest x-ray and pathology at PhysioNet. We expect to add more models and resources for training medical foundation models such as datasets and benchmarks in the future. We also welcome the medical AI research community to contribute to this.
+[Medical AI Research Foundations](https://doi.org/10.13026/psq3-vj24) is a repository of open-source medical foundation models and code. Researchers and developers can accelerate their medical AI research by deploying this collection of non-diagnostic models, APIs, and resources . This is a clear unmet need, as currently there is no central resource that developers and researchers can leverage to build medical AI. This has slowed down both research and translation efforts. Our goal is to democratize access to foundational medical AI models and help researchers and medical AI developers rapidly build new solutions. To this end, we open-sourced [REMEDIS](https://arxiv.org/pdf/2205.09723.pdf) code-base and we are currently hosting checkpoints for chest x-ray and pathology at [PhysioNet](https://doi.org/10.13026/psq3-vj24). We expect to add more models and resources for training medical foundation models such as datasets and benchmarks in future. We also welcome the medical AI research community to contribute to this.
 
 
 
@@ -71,6 +71,7 @@ You can access model weights at the [Medical AI Research Foundations PhysioNet](
 | [path-50x1-remedis-s](https://doi.org/10.13026/grp0-z205)      | Pathology        | BiT-S    | ResNet 50x1     |
 
 
+
 There are multiple models provided. Each model file has the following format:
 
 `{DATA_TYPE}-{ARCHITECTURE}-remedis-{PRETRAINING_DATA_SIZE}`
@@ -79,7 +80,9 @@ There are multiple models provided. Each model file has the following format:
   - `ARCHITECTURE`: 50x1 (for ResNet 50x1) or 152x2 (for ResNet 152x2), indicating the architectures.
   - `RETRAINING_DATA_SIZE`: `s` or `m`, indicating whether BiT-S or BiT-M were used as a starting point.
 
-Download the models using the terminal using the following command or by visiting [Medical AI Research Foundations PhysioNet](https://physionet.org/content/medical-ai-research-foundation/1.0.0/) directly:
+
+Download the models using the terminal and the following command or by visiting [Medical AI Research Foundations PhysioNet](https://physionet.org/content/medical-ai-research-foundation/1.0.0/) directly:
+
 
 ```
 wget -r -N -c -np --user <physionet-username> --ask-password https://physionet.org/files/medical-ai-research-foundation/1.0.0/
