@@ -25,6 +25,7 @@ For contrastive pretraining, we build on [SimCLR](https://github.com/google-rese
 
 In our default contrastive pretraining setting, we utilized random cropping (C), random color distortion (D), rotation (R), and random Gaussian blur (G) as the data augmentation strategy. Due to the grayscale nature of radiology images, for these images we opted for stronger data augmentation to reduce the chances of overfitting. We further improved the final performance by incorporating histogram equalization and elastic deformation  in addition to our default data augmentation strategy.
 
+
 ### **Training Data**
 We open-source models trained on public medical data only. This is available for chest x-ray and pathology only. The data used in each model are the following:
 
@@ -93,7 +94,6 @@ wget -r -N -c -np --user <physionet-username> --ask-password https://physionet.o
 The Tensorflow 2 saved model format can be loaded as follows. See further information about hub Module [here](https://www.tensorflow.org/hub/api_docs/python/hub/Module).
 
 ```
-​
 import tensorflow_hub as hub
 
 module = hub.load('TOP_LEVEL_HUB_PATH')
@@ -103,7 +103,6 @@ module = hub.load('TOP_LEVEL_HUB_PATH')
 image = <LOAD_IMAGE_HERE>
 
 embedding_of_image = module(image)
-​
 ```
 
 
